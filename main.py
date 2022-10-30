@@ -1,5 +1,8 @@
-# John B
-# My Random Game Program
+###############################################################################
+# Filename    : main.py
+# Date        :
+# Description :
+###############################################################################
 
 import pygame
 import random
@@ -11,14 +14,14 @@ pygame.init()
 
 # create game screen
 screen = pygame.display.set_mode((800, 600))
-ship_icon = "ship_sml.png"
-playerPng = "player.png"
-enemyPng = "enemy.png"
-backgroundPng = "bg.png"
-bulletPng = "bullet.png"
-backgroundWav = 'background.wav'
-explosionWav = 'explosion.wav'
-laserWav = 'laser.wav'
+ship_icon = "Images/ship_sml.png"
+playerPng = "Images/player.png"
+enemyPng = "Images/enemy.png"
+backgroundPng = "Images/bg.png"
+bulletPng = "Images/bullet.png"
+backgroundWav = 'Sounds/background.wav'
+explosionWav = 'Sounds/explosion.wav'
+laserWav = 'Sounds/laser.wav'
 
 # Caption and Icon
 pygame.display.set_caption("Space Invaders!!!!!!!!!!!!!")
@@ -29,8 +32,8 @@ pygame.display.set_icon(icon)
 backgroundImg = pygame.image.load(backgroundPng)
 
 # Background Sound
-mixer.music.load(backgroundWav)
-mixer.music.play(-1)
+# mixer.music.load(backgroundWav)
+# mixer.music.play(-1)
 
 # Player
 playerImg = pygame.image.load(playerPng)
@@ -56,6 +59,7 @@ for i in range(num_of_enemies):
 # bullet
 # ready = you can't see the bullet on the screen
 # fire = the bullet is curretnly moving
+
 bulletImg = pygame.image.load(bulletPng)
 bulletX = 0
 bulletY = 480
